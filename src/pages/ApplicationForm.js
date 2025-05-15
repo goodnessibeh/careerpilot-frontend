@@ -1,14 +1,21 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Box, Typography, Paper, useParams } from '@mui/material';
 
 const ApplicationForm = () => {
   const { jobId } = useParams();
   
   return (
-    <div>
-      <h1>Application Form</h1>
-      <p>Fill out this application form for job ID: {jobId}</p>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Typography variant="h4" component="h1" gutterBottom>
+        Application Form
+      </Typography>
+      
+      <Paper sx={{ p: 3 }}>
+        <Typography variant="body1">
+          Job application form for job ID: {jobId} will be displayed here.
+        </Typography>
+      </Paper>
+    </Box>
   );
 };
 

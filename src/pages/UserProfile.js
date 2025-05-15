@@ -1,11 +1,19 @@
 import React from 'react';
+import { Box, Typography, Paper } from '@mui/material';
 
 const UserProfile = () => {
   return (
-    <div>
-      <h1>User Profile</h1>
-      <p>View and edit your user profile.</p>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Typography variant="h4" component="h1" gutterBottom>
+        User Profile
+      </Typography>
+      
+      <Paper sx={{ p: 3 }}>
+        <Typography variant="body1">
+          Your user profile will be displayed here.
+        </Typography>
+      </Paper>
+    </Box>
   );
 };
 

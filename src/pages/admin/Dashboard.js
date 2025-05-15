@@ -1,21 +1,24 @@
 import React from 'react';
 import { Box, Typography, Paper, Grid } from '@mui/material';
 
-const Dashboard = () => {
+const AdminDashboard = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Typography variant="h4" component="h1" gutterBottom>
-        Dashboard
+        Admin Dashboard
       </Typography>
       
       <Grid container spacing={3}>
         <Grid item xs={12} md={6} lg={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" component="h2">
-              Recent Applications
+              User Statistics
             </Typography>
             <Typography variant="body1">
-              Your recent job applications will appear here.
+              Total users: Loading...
+            </Typography>
+            <Typography variant="body1">
+              Active users: Loading...
             </Typography>
           </Paper>
         </Grid>
@@ -23,10 +26,13 @@ const Dashboard = () => {
         <Grid item xs={12} md={6} lg={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" component="h2">
-              Application Status
+              Application Statistics
             </Typography>
             <Typography variant="body1">
-              Track the status of your job applications here.
+              Total applications: Loading...
+            </Typography>
+            <Typography variant="body1">
+              Applications today: Loading...
             </Typography>
           </Paper>
         </Grid>
@@ -34,10 +40,13 @@ const Dashboard = () => {
         <Grid item xs={12} md={6} lg={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" component="h2">
-              Recommended Jobs
+              System Status
             </Typography>
             <Typography variant="body1">
-              Job recommendations based on your profile will appear here.
+              API Status: Online
+            </Typography>
+            <Typography variant="body1">
+              Database: Connected
             </Typography>
           </Paper>
         </Grid>
@@ -46,4 +55,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default AdminDashboard;
