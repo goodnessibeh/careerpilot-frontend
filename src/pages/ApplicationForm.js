@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Paper, useParams } from '@mui/material';
+import { Box, Typography, Paper } from '@mui/material';
+import { useParams } from 'react-router-dom';
 
 const ApplicationForm = () => {
   const { jobId } = useParams();
